@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiddies Tech Virtual Masterclass</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">KiddiesTech</div>
+            <div class="tagline">Preparing the next generation of tech innovators</div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Unlock Your Child's <span class="highlight">Tech Potential</span></h1>
+            <p class="subtitle">Interactive virtual masterclasses designed to spark creativity and build future-ready skills</p>
+        </div>
+    </section>
+    
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Our Masterclasses?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">👩‍💻</div>
+                    <h3 class="feature-title">Expert Instructors</h3>
+                    <p>Learn from industry professionals who make complex concepts simple and fun for kids.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3 class="feature-title">Interactive Learning</h3>
+                    <p>Hands-on projects and games that keep kids engaged while they learn valuable skills.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                    <h3 class="feature-title">Small Class Sizes</h3>
+                    <p>Personalized attention with limited seats to ensure every child gets the support they need.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Parents Are Saying</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"My 10-year-old built her first website after just two weeks! She's so proud of her accomplishment."</p>
+                    <p class="testimonial-author">- Sarah M., Parent</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The instructors have an amazing way of making complex tech concepts accessible to kids. Highly recommend!"</p>
+                    <p class="testimonial-author">- David T., Parent</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"My son went from playing games to creating them. This program has completely changed his perspective on technology."</p>
+                    <p class="testimonial-author">- Amina K., Parent</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="registration">
+        <div class="container">
+            <div class="form-container">
+                <h2 class="form-title">Register Your Child Today</h2>
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="childName">Child's Name</label>
+                        <input type="text" id="childName" name="childName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age" min="5" max="18" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Parent's Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="category">Interest Area</label>
+                        <select id="category" name="category" required>
+                            <option value="">Select a category</option>
+                            <option value="Web Development">Web Development</option>
+                            <option value="UI/UX Design">UI/UX Design</option>
+                            <option value="Graphics Design">Graphics Design</option>
+                            <option value="Cyber Security">Cyber Security</option>
+                            <option value="Mobile App Development">Mobile App Development</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn" id="registerBtn">Register Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Kiddies Tech Virtual Masterclass. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
