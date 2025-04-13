@@ -53,13 +53,13 @@ function generateReference() {
 
 function handlePaymentSuccess(response, formData) {
     const message = `New Registration:
-        Name: ${formData.childName}
-        Age: ${formData.age}
-        Email: ${formData.email}
-        Phone: ${formData.phone}
-        Category: ${formData.category}
-        Payment Ref: ${response.reference}
-        Transaction ID: ${response.transaction}`;
+Name: ${formData.childName}
+Age: ${formData.age}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Category: ${formData.category}
+Payment Ref: ${response.reference}
+Transaction ID: ${response.transaction}`;
 
     const whatsappURL = `https://wa.me/${config.WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
     window.location.href = whatsappURL;
@@ -74,4 +74,4 @@ function handlePaymentClose() {
 function validateEmail(email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(String(email).toLowerCase());
-}
+                }
