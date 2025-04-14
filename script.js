@@ -148,3 +148,24 @@ document.addEventListener('DOMContentLoaded', function() {
         startAutoSlide();
     });
 });
+
+// Add to script.js
+function scrollToRegistration() {
+  const formSection = document.querySelector('.registration');
+  formSection.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
+  
+  // Optional: Add focus to first form field
+  document.getElementById('childName').focus();
+}
+
+// Optional: Add keyboard accessibility
+document.querySelector('.scroll-down-btn').addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') {
+    scrollToRegistration();
+  }
+});
+
+
