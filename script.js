@@ -15,10 +15,10 @@ document.getElementById('registrationForm').addEventListener('submit', function(
 
     // Initialize Paystack payment
     const paymentHandler = PaystackPop.setup({
-        key: pk_live_c4db143d371ee8ff7175b5769e42d23a5948ea20,
+        key: config.PAYSTACK_PUBLIC_KEY,
         email: formData.email,
-        amount: 500,
-        currency: NGN,
+        amount:  config.AMOUNT,
+        currency: config.CURRENCY,
         ref: generateReference(),
         callback: function(response) {
             handlePaymentSuccess(response, formData);
