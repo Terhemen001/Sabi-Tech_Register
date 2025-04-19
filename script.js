@@ -15,7 +15,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
 
     // Initialize Paystack payment
     const paymentHandler = PaystackPop.setup({
-        key: config.PAYSTACK_PUBLIC_KEY,
+        key: pk_live_c4db143d371ee8ff7175b5769e42d23a5948ea20,
         email: formData.email,
         amount: config.AMOUNT,
         currency: config.CURRENCY,
@@ -61,7 +61,7 @@ Category: ${formData.category}
 Payment Ref: ${response.reference}
 Transaction ID: ${response.transaction}`;
 
-    const whatsappURL = `https://wa.me/${config.WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    const whatsappURL = `https://wa.me/${2349075328722}?text=${encodeURIComponent(message)}`;
     window.location.href = whatsappURL;
 }
 
