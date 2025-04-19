@@ -61,7 +61,7 @@ Category: ${formData.category}
 Payment Ref: ${response.reference}
 Transaction ID: ${response.transaction}`;
 
-    const whatsappURL = `https://wa.me/${2349075328722}?text=${encodeURIComponent(message)}`;
+    const whatsappURL = `https://wa.me/${config.WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
     window.location.href = whatsappURL;
 }
 
