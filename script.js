@@ -17,8 +17,8 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     const paymentHandler = PaystackPop.setup({
         key: pk_live_c4db143d371ee8ff7175b5769e42d23a5948ea20,
         email: formData.email,
-        amount: config.AMOUNT,
-        currency: config.CURRENCY,
+        amount: 500,
+        currency: NGN,
         ref: generateReference(),
         callback: function(response) {
             handlePaymentSuccess(response, formData);
